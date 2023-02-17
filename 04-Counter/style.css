@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;500;600;700&display=swap');
+
+:root {
+    --background-color: #15202B;
+    --heading-color: #8899A6;
+    --font-color: #E4E6EB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+body {
+    font-family: 'Rokkitt', serif;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--background-color);
+    color: var(--font-color);
+    
+}
+h1 , h2 , h3 {
+    color: var(--heading-color);
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.wrapper .title {
+    font-size: 64px;
+    padding: 30px;
+    text-align: center;
+}
+.wrapper .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+.wrapper .container .number {
+    font-size: 100px;
+    margin-bottom: 50px;
+    padding: 20px 50px;
+    box-shadow: 1px 1px 12px rgba(255, 255, 255, 0.2);
+}
+.wrapper .container .btns {
+    display: flex;
+    gap: 50px;
+}
+.container .btns button {
+    padding: 10px 25px;
+    font-size: 18px;
+    background-color: var(--heading-color);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+.container .btns button:hover {
+    color: var(--font-color);
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper .title {
+        font-size: 52px;
+    }
+    .wrapper .container {
+        margin-top: 60px;
+    }
+    .wrapper .container .number {
+        font-size: 80px;
+    }
+    .wrapper .container .btns {
+        gap: 30px;
+    }
+    .container .btns button {
+        padding: 8px 15px;
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .wrapper .title {
+        font-size: 36px;
+    }
+    .wrapper .container {
+        margin-top: 50px;
+    }
+    .wrapper .container .number {
+        font-size: 80px;
+    }
+    .wrapper .container .btns {
+        gap: 15px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
