@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary: #404258;
+  --secondary: #474e68;
+  --btn: #6b728e;
+  --text: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "poppins", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-color: var(--secondary);
+  max-width: 400px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+}
+.container .title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 36px;
+}
+.container .bmi-form {
+  display: flex;
+  flex-direction: column;
+  margin-block: 40px;
+}
+input {
+  margin-block: 3px 20px;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+label {
+  font-size: 14px;
+}
+.btn {
+  padding: 12px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--btn);
+  color: var(--text);
+  font-size: 17px;
+}
+.bmi-result {
+  background-color: yellowgreen;
+  text-align: center;
+  padding: 20px 0;
+  letter-spacing: 1.4px;
+  border-radius: 5px;
+}
+.status,
+.data {
+  color: #404258;
+  font-weight: 700;
+  font-size: 20px;
+}
