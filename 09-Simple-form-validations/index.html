@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>from validations</title>
+    <!-- fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- js file -->
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2 class="title">Login Form</h2>
+      <form class="login-form">
+        <div class="email">
+          <div class="input-details">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="input-field"
+              placeholder="E-mail"
+            />
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <i class="fa fa-exclamation-circle error" aria-hidden="true"></i>
+          </div>
+          <p class="error-text error">field cannot be empty</p>
+        </div>
+        <div class="password">
+          <div class="input-details">
+            <input
+              type="text"
+              name="password"
+              id="password"
+              placeholder="Password"
+              class="input-field"
+            />
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <i class="fa fa-exclamation-circle error" aria-hidden="true"></i>
+          </div>
+          <p class="error-text error">field cannot be empty</p>
+        </div>
+        <div class="forget"><a href="#">Forgot password</a></div>
+        <input type="submit" value="Login" class="submit-btn" />
+      </form>
+      <p class="signup">Not a member? <a href="#">Sign up</a></p>
+    </div>
+  </body>
+</html>
