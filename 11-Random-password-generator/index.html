@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Random password generator</title>
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- js file -->
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="title">Random Password</h2>
+        <div class="password-container">
+            <input type="text" name="password" id="password" disabled value="">
+            <button>Copy</button>
+        </div>
+        <div class="password-settings">
+            <form action="#">
+                <div class="pass-length">
+                    <input type="range" name="length" id="length" value="15" min="1" max="30">
+                    <div class="length-box">
+                        <label for="length">Password length</label>
+                        <span class="pass-length-count">15</span>
+                    </div>
+                </div>
+                <div class="lowercase-con flex">
+                    <label for="lowercase">LowerCase</label>
+                    <input type="checkbox" name="lowercase" id="lowercase">
+                </div>
+                <div class="uppercase-con flex">
+                    <label for="uppercase">UpperCase</label>
+                    <input type="checkbox" name="uppercase" id="uppercase">
+                </div>
+                <div class="number-con flex">
+                    <label for="number">Number</label>
+                    <input type="checkbox" name="number" id="number">
+                </div>
+                <div class="special-con flex">
+                    <label for="special">Special-character</label>
+                    <input type="checkbox" name="special" id="special">
+                </div>
+                <button type="submit" class="btn">Generate Password</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
