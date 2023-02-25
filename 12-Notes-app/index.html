@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontAwesime -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- title -->
+    <title>Notes-App</title>
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- custom js file -->
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <!-- popupbox -->
+    <div class="popup-box">
+        <div class="popup">
+            <div class="popup-content">
+                <div class="upper">
+                    <h3>Add a note</h3>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <form action="#">
+                    <div class="title">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title" placeholder="Enter title..." autofocus>
+                    </div>
+                    <div class="description">
+                        <label for="description">Description</label>
+                        <textarea name="description" id="description" placeholder="Enter description..."></textarea>
+                    </div>
+                    <button type="submit">Add note</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- content -->
+    <h1 class="main-heading">Notes App</h1>
+    <div class="notes-container">
+        <li class="add-note">
+            <div class="plus">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+            <p>Add new note</p>
+        </li>
+        <!-- <li class="note">
+            <div class="content">
+                <div class="heading">This is a demo title</div>
+                <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eum omnis natus fugit repellendus voluptatumem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eum omnis natus fugit repellendus voluptatum.</div>
+            </div>
+            <div class="details">
+                <div class="time">06 April, 2023</div>
+                <div class="action-btns">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </div>
+        </li> -->
+    </div>
+</body>
+</html>
