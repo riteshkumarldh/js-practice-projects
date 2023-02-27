@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: hsl(0, 0%, 22%);
+}
+.dot {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 100%);
+}
+.outline {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid hsl(0, 0%, 100%);
+}
+.dot,
+.outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1;
+}
